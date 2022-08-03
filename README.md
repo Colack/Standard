@@ -17,7 +17,8 @@ Due to the way that [Code.org](https://code.org) handles libraries for Applab, t
 ## Catagories
 There are many different libraries with many different purposes:
 
-- **console** 
-Libraries focused on working with the console.
-- **values**
-Libraries focused on tweaking, writing and reading different values inside of the 
+- **console**   
+Libraries focused on working with the console.  
+- **values**  
+Libraries focused on tweaking, writing and reading different values inside of the application.   
+  
