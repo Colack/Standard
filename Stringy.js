@@ -4,8 +4,8 @@
 */
 // Repeats string casing
 String.prototype.repeat = function (num) {
-    let newString = this;
-    for (let i = 0; i < num; i++) {
+    var newString = this;
+    for (var i = 0; i < num; i++) {
         newString += this;
     }
     return (newString);
@@ -26,18 +26,18 @@ String.prototype.endsWith = function (search, index) {
 };
 // Reverses the entireity of a string
 String.prototype.reverse = function () {
-    let reverse = "";
-    for (let i = this.length - 1; i >= 0; i--) {
+    var reverse = "";
+    for (var i = this.length - 1; i >= 0; i--) {
         reverse += this[i];
     }
     return (reverse);
 }
 // Basically useless like why would you?
 String.prototype.anagram = function () {
-    let old = this.split("");
-    let str = "";
-    for (let i = 0; i < this.length; i++) {
-        let choice = randomNumber(0, old.length - 1)
+    var old = this.split("");
+    var str = "";
+    for (var i = 0; i < this.length; i++) {
+        var choice = randomNumber(0, old.length - 1)
         str += old[choice]
         old.splice(choice, 1);
     }
@@ -45,10 +45,10 @@ String.prototype.anagram = function () {
 }
 // Pads the beginning of a string with a value
 String.prototype.padStart = function (num, val) {
-    let start = ""
+    var start = ""
     val = val || " ";
     num = num - this.length || 0;
-    for (let i = 0; i < num; i++) {
+    for (var i = 0; i < num; i++) {
         start += val[i % val.length];
     }
     start += this;
@@ -56,10 +56,10 @@ String.prototype.padStart = function (num, val) {
 }
 // Pads the ending of a string
 String.prototype.padEnd = function (num, val) {
-    let end = this;
+    var end = this;
     val = val || " ";
     num = num - this.length || 0;
-    for (let i = 0; i < num; i++) {
+    for (var i = 0; i < num; i++) {
         end += val[i % val.length];
     }
     return (end);
