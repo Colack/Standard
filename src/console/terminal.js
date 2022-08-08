@@ -100,11 +100,9 @@ function groupReset() {
 // Returns info.
 function info(input) {
     var string = input.toString();
-    console.log("\n");
-    console.log("\n");
+    console.log("\n\n");
     console.log(string);
-    console.log("\n");
-    console.log("\n");
+    console.log("\n\n");
 }
 
 // Waits a specified amount of time, then logs a specified value.
@@ -134,3 +132,16 @@ function table(input) {
     }
     console.log(table);
 }
+var watchers = []; // can be replaced or possibly better {} <- object timer labeling
+// keeps track of values becaise watching arr[index] values is no longer supported in watchers
+// and yes eval is needed here for it to update properly
+function watch(value, delay, label) {
+    watchers.push(setInterval(function () {
+        console.log((label || value + ":") + " " + eval(value));
+    }, delay || 1e3));
+};
+// stops an invoked timer or the last current one added to the queue
+function stop(index) {
+    if (index === void 0) { index = watchers.length - 1; }
+    clearInterval(watchers[index]);
+};
