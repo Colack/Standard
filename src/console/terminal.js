@@ -10,6 +10,9 @@
 var TERMINAL_VARIABLES = {};
 var TERMINAL_CURRENTGROUP = 0;
 
+// can be replaced or possibly better {} <- object timer labeling
+var watchers = [];
+
 // Prints a value to the Console.
 function print(input) {
     for (var i = 0; i < TERMINAL_CURRENTGROUP; i++) {
@@ -132,15 +135,15 @@ function table(input) {
     }
     console.log(table);
 }
-var watchers = []; // can be replaced or possibly better {} <- object timer labeling
-// keeps track of values becaise watching arr[index] values is no longer supported in watchers
-// and yes eval is needed here for it to update properly
+
+// Keeps track of values becaise watching arr[index] values is no longer supported in watchers
 function watch(value, delay, label) {
     watchers.push(setInterval(function () {
         console.log((label || value + ":") + " " + eval(value));
     }, delay || 1e3));
 };
-// stops an invoked timer or the last current one added to the queue
+
+// Stops an invoked timer or the last current one added to the queue
 function stop(index) {
     if (index === void 0) { index = watchers.length - 1; }
     clearInterval(watchers[index]);
