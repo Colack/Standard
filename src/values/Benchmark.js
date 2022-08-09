@@ -1,3 +1,4 @@
+// A(n) object that contains everything partaining to the benchmark
 var Timer = /** @class */ (function () {
     function Timer(label) {
         this.time = [];
