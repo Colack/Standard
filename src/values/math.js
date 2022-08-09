@@ -32,7 +32,7 @@ Number.prototype.modulo = function(n) {
 };
 
 // useful in cases where a variable may not be a number
-    Number.isInteger = function (value) {
+Number.isInteger = function (value) {
     return (typeof value === 'number' && isFinite(value) && Math.floor(value) === value)
 }
 
