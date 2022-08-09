@@ -6,25 +6,30 @@
         - New functions can be added as needed.
 */
 
-// Add two numbers
-function add(num1, num2) {
-    return num1 + num2;
-}
+// Multiply 2 values.
+Number.prototype.multiply = function(n) {
+	return this.valueOf() * n;
+};
 
-// Subtract two numbers
-function subtract(num1, num2) {
-    return num1 - num2;
-}
+// Divide 2 values.
+Number.prototype.divide = function(n) {
+	return this.valueOf() / n;
+};
 
-// Multiply two numbers
-function multiply(num1, num2) {
-    return num1 * num2;
-}
+// Add 2 values.
+Number.prototype.add = function(n) {
+	return this.valueOf() + n;
+};
 
-// Divide two numbers
-function divide(num1, num2) {
-    return num1 / num2;
-}
+// Subtract 2 values.
+Number.prototype.subtract = function(n) {
+	return this.valueOf() - n;
+};
+
+// Modulo 2 values.
+Number.prototype.modulo = function(n) {
+	return this.valueOf() % n;
+};
 
 // Create a random number between two numbers
 function random(num1, num2) {
