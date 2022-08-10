@@ -103,9 +103,7 @@ function groupReset() {
 // Returns info.
 function info(input) {
     var string = input.toString();
-    console.log("\n\n");
-    console.log(string);
-    console.log("\n\n");
+    console.log("\n\n" + string + "\n\n");
 }
 
 // Waits a specified amount of time, then logs a specified value.
