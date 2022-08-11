@@ -137,7 +137,7 @@ function table(input) {
 // Keeps track of values becaise watching arr[index] values is no longer supported in watchers
 function watch(value, delay, label) {
     watchers.push(setInterval(function () {
-        console.log((label || value + ":") + " " + eval(value));
+        console.log((label || value + ":") + " " + window[value]);
     }, delay || 1e3));
 };
 
