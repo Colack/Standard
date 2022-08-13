@@ -37,8 +37,8 @@ Number.isInteger = function (value) {
 }
 
 // Checks if a given value is a float
-Number.isFloat = function (value) {
-    return (!Number.isInteger(value) && isFinite(value));
+Number.prototype.isFloat = function () {
+    return (typeof this === 'number' && Math.floor(this) !== this && isFinite(this));
 }
 
 // Returns the lowest value possible of a positive or negative number
@@ -53,7 +53,7 @@ Number.prototype.isInteger = function () {
 
 // Shorthanded version if the datatype is already a Number
 Number.prototype.isFloat = function () {
-    return (!this.isInteger() && isFinite(this));
+    return (typeof this === 'number' && isFinite(this) && Math.floor(this) !== this);
 }
 
 // Checks if a(n) number is even
