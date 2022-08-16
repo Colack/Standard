@@ -1,9 +1,5 @@
 /*
-    Completed by Colack (8/3/2022)
-    Notes:
-        - This is a vary bare-bones math library.
-        - It is not meant to be a full-feature math library. (Yet)
-        - New functions can be added as needed.
+    Completed by Colack (8/16/2022)
 */
 
 // Multiply 2 values.
@@ -121,3 +117,13 @@ function circumference(radius) {
 function squareRoot(num) {
     return Math.sqrt(num);
 }
+
+// Get the absolute value of a number
+function absolute(number) {
+  if (number < 0) {
+    return number *= -1;
+  } else {
+    return number *= 1;
+  }
+}
+
