@@ -1,0 +1,9 @@
+Btype!
+title Standard
+author CDO Open Team
+manager CDO Open Team
+description Standard Library for the Code.org Applab
+version 1.0
+keywords javascript library standard-library applab code-dot-org
+main src/
+end
