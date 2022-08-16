@@ -1,3 +1,5 @@
 *.beans @Colack
 *.bgen @Colack
 *.btype @Colack
+*.editorconfig @Colack
+*.gitignore @Colack
