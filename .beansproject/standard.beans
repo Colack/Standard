@@ -20,3 +20,6 @@ print Libraries focused on tweaking, writing and reading different values inside
 wait 0.75
 print display
 print Libraries focusing on displaying stuff on the screen.
+wait 0.75
+print utility
+print Libraries focused on random useful features.
