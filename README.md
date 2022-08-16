@@ -22,5 +22,5 @@ Libraries focused on working with the console.
 Libraries focused on tweaking, writing and reading different values inside of the application.   
 - **display**    
 Libraries focusing on displaying stuff on the screen.    
-- **utility**
+- **utility**   
 Libraries focused on random useful features.
