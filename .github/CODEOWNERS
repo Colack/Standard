@@ -1,5 +1,5 @@
-*.js @code-org-open-source
-*.md @code-org-open-source
+*.js @Colack @Varrience
+*.md @Colack
 *.beans @Colack
 *.bgen @Colack
 *.btype @Colack
