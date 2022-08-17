@@ -68,7 +68,7 @@ Number.prototype.isEven = function () {
 
 // Checks if a number is odd
 Number.prototype.isOdd = function () {
-    return (!this.isEven());
+    return (this % 2 !== 0);
 }
 
 // Checks if a number is prime Euclidian Method
