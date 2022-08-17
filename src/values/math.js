@@ -1,5 +1,9 @@
 /*
-    Completed by Colack (8/16/2022)
+    @Authors Varrience, Colack
+        - Last updated by Colack    (8/16/2022)
+        - Last updated by Varrience (8/17/2022)
+    @About
+        - adds new features to Number & Math constructors
 */
 
 // Multiply 2 values.
@@ -106,6 +110,131 @@ Number.prototype.roundAt = function (point) {
 Number.prototype.ceilAt = function (point) {
     var p = Math.pow(10, point);
     return (Math.ceil(this * p) / p || Math.ceil(this))
+}
+
+// Provides a random integer with an inclusive range (REDUNDANT TO RANDOM NUMBER WHICH DOES THE SAME THING)
+Math.randomInt = function (start, stop) {
+    return Math.round(random() * (stop - start) + start);
+}
+
+// Provides a random number as a float
+Math.randomFloat = function (start, stop) {
+    return Math.round(((Math.random() * (stop - start) + start) * 1e6)) / 1e6;
+}
+// Provides a random number as a double
+Math.randomDouble = function (start, stop) {
+    return (Math.random() * (stop - start) + start);
+}
+
+// The greatest common factor between 2 numbers
+Math.gcm = function (num1, num2) {
+    return (!num2 ? num1: Math.gcm(num2, num1 % num2));
+}
+
+// Compares the greatest common factor through an array of numbers
+Math.gcf = function () {
+    var args = arguments.flat(Infinity);
+    var result = args[0];
+    for (var i = 0; i < args.length; i++) {
+        result = Math.gcm(args[i], result);
+        if (result === 1) {
+            return result;
+        }
+    }
+    return (result);
+}
+
+// The least common factor between 2 numbers
+Math.lcm = function (num1, num2) {
+    return ((num1 * num2) / Math.gcm(num1, num2));
+}
+
+// The least common factor between an array of numbers
+Math.lcf = function () {
+    var args = arguments.flat(Infinity);
+    var result = args[0];
+    for (var i = 1; i < args.length; i++) {
+        result = Math.lcm(args[i], result);
+    }
+    return result;
+}
+
+// Average of a dataset of numbers
+Math.mean = function () {
+    var args = arguments.flat(Infinity);
+    var sum = 0;
+    sum = args.reduce(function (a, b) { return (a + b); }, 0);
+    return (sum / args.length);
+}
+
+// Median of the dataset
+Math.median = function () {
+    var args = arguments.flat(Infinity);
+    if (args.length < 1) {
+        return null;
+    }
+    args = args.sort();
+    var length = args.length / 2;
+    return (Math.floor(length) !== length ? (args[Math.floor(length)] + args[Math.ceil(length)]) / 2 : args[length]);
+}
+
+// Grants the most common occurence of numbers
+Math.mode = function () {
+    var args = arguments.flat(Infinity);
+    var max = 0;
+    var counter = [];
+    var modes = [];
+    for (var _a = 0, args_1 = args; _a < args_1.length; _a++) {
+        var arg = args_1[_a];
+        counter[arg] = (counter[arg] >> 0) + 1;
+        if (counter[arg] > max) {
+            max++;
+        }
+    }
+    for (var i in counter) {
+        if (counter[i] === max) {
+            modes.push(Number(i));
+        }
+    }
+    return (modes);
+}
+
+// Grants the difference between the highest and lowest number
+Math.range = function () {
+    var args = arguments.flat(Infinity);
+    return (args[args.length - 1] - args[0]);
+}
+
+// Sums any amount of values together
+Math.sum = function () {
+    var args = arguments.flat(Infinity);
+    return args.reduce(function (acc, val) {
+        return acc + val;
+    }, 0);
+}
+
+// Subtracts any amount of values together
+Math.sub = function () {
+    var args = arguments.flat(Infinity);
+    return args.reduce(function (acc, val) {
+        return acc - val;
+    }, 0);
+}
+
+// Multiplies any amount of values together
+Math.mul = function () {
+    var args = arguments.flat(Infinity);
+    return args.reduce(function (acc, val) {
+        return acc * val;
+    }, 1);
+}
+
+// Divides any amount of values together
+Math.div = function () {
+    var args = arguments.flat(Infinity);
+    return args.reduce(function (acc, val) {
+        return (val || 1) / acc;
+    }, 1);
 }
 
 // Create a random number between two numbers
