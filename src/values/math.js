@@ -39,7 +39,12 @@ Number.prototype.isFloat = function () {
 
 // Returns the lowest value possible of a positive or negative number
 Number.prototype.redline = function () {
-    return (Math.abs(this) - Math.abs(this - 1));
+    return (Math.sign(this));
+}
+
+// Returns the opposite lowest value of a positive or negative number
+Number.prototype.breakline = function () {
+    return (-Math.sign(this));
 }
 
 // Is more shorthanded just in case the type is already a number and need specific testing
@@ -64,8 +69,8 @@ Number.prototype.isOdd = function () {
 
 // Checks if a number is prime Euclidian Method
 Number.prototype.isPrime = function () {
-    let max = Math.sqrt(this);
-    for (let i = 2; i <= max; i++) {
+    var max = Math.sqrt(this);
+    for (var i = 2; i <= max; i++) {
         if (this % i === 0) {
             return (false)
         }
