@@ -3,3 +3,4 @@
 *.btype @Colack
 *.editorconfig @Colack
 *.gitignore @Colack
+*.ps @Colack
