@@ -15,3 +15,7 @@ Object.defineProperty(Array.prototype, 'flat', {
         return flatten(this, depth);
     }
 });
+// Returns weather a number is positive or negative
+Math.sign = function(num: number){
+    return((num > 0) - (num < 0) || num)
+}
