@@ -1,6 +1,7 @@
 /*
-  Completed by @Varrience
-  Notes:
+  @Authors @Varrience
+   - Last updated by @Varrience     (8/5/22)
+  @About
        - Provides some polyfills and new functionality to basic strings left out by CDO
 */
 
