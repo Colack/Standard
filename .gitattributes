@@ -1,0 +1,5 @@
+*       text=auto
+*.txt		text
+*.js    diff=js
+*.md    text
+*.ps    diff=ps
