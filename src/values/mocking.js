@@ -1,6 +1,7 @@
 /*
-  Completed by @Colack (8/8/22)
-  Notes:
+  @Authors @Colack
+   - Last updated by @Colack    (8/17/22)
+  @About
     - This libary is for testing different values and 'mocking' them.
 */
 
