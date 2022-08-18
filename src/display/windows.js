@@ -1,6 +1,6 @@
 /*
-    @Authors Colack
-     - Last updated by Colack   (8/17/22)
+    @Authors @Colack
+     - Last updated by @Colack   (8/17/22)
     @About
      - A windows manager for Code.org
 */
