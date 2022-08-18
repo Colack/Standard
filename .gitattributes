@@ -1,5 +1,5 @@
 *       text=auto
-*.txt		text
+*.txt   text
 *.js    diff=js
 *.md    text
 *.ps    diff=ps
