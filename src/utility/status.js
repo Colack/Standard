@@ -1,5 +1,8 @@
 /*
-  Completed By Colack (8/16/22)
+  @Authors Colack
+   - Last updated by Colack    (8/17/22)
+  @About
+   - Power, and status module.
 */
 
 // Abort the current program
