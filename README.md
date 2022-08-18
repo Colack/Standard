@@ -1,4 +1,4 @@
-<h2 align="center">CDOStandard</h2>
+<h2 align="center">CDOStandard V1.0</h2>
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg">
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
@@ -23,4 +23,6 @@ Libraries focused on tweaking, writing and reading different values inside of th
 - **display**    
 Libraries focusing on displaying stuff on the screen.    
 - **utility**   
-Libraries focused on random useful features.
+Libraries focused on random useful features.   
+- **other**    
+Other Libraries for things like credits and such.
