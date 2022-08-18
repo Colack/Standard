@@ -1,9 +1,18 @@
+/*
+ @Authors @Varrience @Colack
+  - Last updated by @Varrience   (8/16/22)
+  - Last updated by @Colack      (8/17/22)
+ @About
+  - Module for testing and looking at arrays.
+*/
+
 // Compares if two arrays are equal to each other
 Object.defineProperty(Array.prototype, 'equals', {
     value: function (array) {
         return (this.join("") === array.join(""));
     }
 });
+
 // Shuffles any given data provided in the program
 Object.defineProperty(Array.prototype, 'shuffle', {
     value: function () {
@@ -17,6 +26,7 @@ Object.defineProperty(Array.prototype, 'shuffle', {
         return (newArr);
     }
 });
+
 // Array.fill prototype method
 Object.defineProperty(Array.prototype, 'fill', {
     value: function (value, start, stop) {
