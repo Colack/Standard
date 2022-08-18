@@ -23,3 +23,6 @@ print Libraries focusing on displaying stuff on the screen.
 wait 0.75
 print utility
 print Libraries focused on random useful features.
+wait 0.75
+print other
+print Other Libraries for things like credits and such.
