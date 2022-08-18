@@ -1,9 +1,8 @@
 /*
-  Completed By Colack (8/15/22)
-  Notes:
-    This is essentially just a window manager for code.org
-    More updates will be coming out in the near future.
-
+    @Authors Colack
+     - Last updated by Colack   (8/17/22)
+    @About
+     - A windows manager for Code.org
 */
 
 // Create a new window. (DON'T USE 'var x = new create'!!!)
