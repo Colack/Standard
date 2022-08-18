@@ -1,6 +1,7 @@
 /*
-  @Authors Colack
+  @Authors Colack Varrience
     - Last updated by Colack    (8/17/22)
+    - Last updated by Varrience     (8/11/22)
   @About
     - Replacement for the 'console' module.
 */
