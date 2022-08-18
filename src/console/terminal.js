@@ -1,10 +1,8 @@
 /*
-  Completed By Colack (8/2/2022)
-  Notes:
-    - More commands are needed.
-    - So far its basically just re-adding the regular console commands,
-    due to the fact that code.org does not have them.
-    - This will probably become outdated the moment that Code.org updates to ES5.
+  @Authors Colack
+    - Last updated by Colack    (8/17/22)
+  @About
+    - Replacement for the 'console' module.
 */
 
 var TERMINAL_VARIABLES = {};
