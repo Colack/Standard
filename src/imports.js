@@ -16,6 +16,6 @@ Object.defineProperty(Array.prototype, 'flat', {
     }
 });
 // Returns weather a number is positive or negative
-Math.sign = function(num: number){
+Math.sign = function(num){
     return((num > 0) - (num < 0) || num)
 }
