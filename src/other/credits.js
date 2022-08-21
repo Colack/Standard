@@ -5,14 +5,25 @@
      - This file contains all credits from the './CREDITS' file. Thanks for all the help!
 */
 
+var waitTime = 50;
+var credits = [
+    'CDO Standard Library',
+    'Author: Many People',
+    'Thanks to:',
+    '- Colack',
+    '- Varrience',
+    'Everyone at [WUT] World, and the GameLab forum.',
+    'Thank you for using this library!'
+];
+
 function credits() {
-    console.log("CDO Standard Libary\n\
-Version: 1.0.0\n\
-Author: Many People\n\n\
-Thanks to:\n\
-- Colack\n\
-- Varrience\n\
-Everyone at [WUT] World, and the GameLab forum. :)\n\n\
-Thank you for using this library!\n\
-:)");
+    var x = false;
+    for (var i = 0; i < credits.length; i++) {
+        if (x) {
+            console.log(credits[i]);
+            setTimeout(function() {
+                x = true;
+            }, waitTime);
+        } 
+    }
 }
