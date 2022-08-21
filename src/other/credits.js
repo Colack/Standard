@@ -1,6 +1,6 @@
 /*
-    @Author @Colack, @Varrience
-    @Date 08/17/2022
+    @Author @Colack @Varrience
+    @Date 08/21/2022
     @About
      - This file contains all credits from the './CREDITS' file. Thanks for all the help!
 */
