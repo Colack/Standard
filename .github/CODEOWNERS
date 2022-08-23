@@ -1,3 +1,4 @@
 *.beans @Colack
 *.bgen @Colack
 *.btype @Colack
+*.blic @Colack
