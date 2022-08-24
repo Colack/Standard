@@ -37,12 +37,12 @@ function clear() {
     }
 }
 
-// Prompts the user.  ....is this necessary?
-function prompt(input) {
-    prompt(input);
-}
+// Prompts the user.  ...is this necessary? also this will force a callback error I'll just disable it for now
+// function prompt(input) {
+//     prompt(input);
+// }
 
-// Prompts the user, and returns it.
+// Prompts the user, and returns it. ...this just serves the same thing that prompt already gives
 function input(input) {
     return prompt(input);
 }
