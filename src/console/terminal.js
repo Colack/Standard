@@ -26,7 +26,7 @@ function newLine() {
 }
 
 // Logs an error to the console.
-function error(input) {
+console.error(input) {
     console.log("> Error: " + input);
 }
 
@@ -37,7 +37,7 @@ function clear() {
     }
 }
 
-// Prompts the user.
+// Prompts the user.  ....is this necessary?
 function prompt(input) {
     prompt(input);
 }
@@ -106,7 +106,7 @@ function info(input) {
 }
 
 // Waits a specified amount of time, then logs a specified value.
-function alarm(input, message) {
+console.alarm = function(input, message) {
     setTimeout(function() {
         console.log("> Alarm: " + message);
     }, input);
@@ -118,7 +118,7 @@ function alarmReset(input) {
 }
 
 // Sends a warning to the console.
-function warn(input) {
+console.warn = function(input) {
     console.log("> Warning: " + input);
 }
 
