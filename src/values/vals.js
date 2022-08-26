@@ -1,7 +1,7 @@
 /*
     @Authors @Colack, @Varrience
      - Last updated by @Colack  (8/17/22)
-     - Last updated by @Varrience (8/21/22)
+     - Last updated by @Varrience (8/26/22)
     @About
      - Library for messing around with values.
 */
@@ -20,5 +20,12 @@ function setValue(variable, value) {
 function setGlobal(name, value) {
     if(typeof name === 'string'){
         window[name] = value;
+    }
+}
+
+// Deletes a Global entry permanently from the window
+function delGlobal(name){
+    if(typeof name === 'string'){
+        delete window[name];
     }
 }
