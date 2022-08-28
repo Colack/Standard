@@ -36,7 +36,7 @@ function clear() {
         console.log("");
     }
 }
-
+console.clear = clear;
 // Prompts the user.  ...is this necessary? also this will force a callback error I'll just disable it for now
 // function prompt(input) {
 //     prompt(input);
