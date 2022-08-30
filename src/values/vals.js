@@ -1,7 +1,7 @@
 /*
     @Authors @Colack, @Varrience
      - Last updated by @Colack  (8/17/22)
-     - Last updated by @Varrience (8/26/22)
+     - Last updated by @Varrience (8/30/22)
     @About
      - Library for messing around with values.
 */
@@ -23,9 +23,16 @@ function setGlobal(name, value) {
     }
 }
 
+// Creates a global placeholder for variable
+function gypGlobal(value, varriable) {
+    if(typeof variable === 'string') {
+        window[varieble] = value;
+    }
+}
+
 // Deletes a Global entry permanently from the window
-function delGlobal(name){
-    if(typeof name === 'string'){
+function delGlobal(name) {
+    if(typeof name === 'string') {
         delete window[name];
     }
 }
