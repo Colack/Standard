@@ -24,9 +24,9 @@ function setGlobal(name, value) {
 }
 
 // Creates a global placeholder for variable
-function gypGlobal(value, varriable) {
-    if(typeof variable === 'string') {
-        window[varieble] = value;
+function gypGlobal(name, varriable) {
+    if(typeof name === 'string' && typeof variable === 'string') {
+        window[varieble] = window[value];
     }
 }
 
