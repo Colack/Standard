@@ -1,8 +1,7 @@
 /**
-@Authors: Varrience
-@Version: 0.01
-@About
-  - Dumps assets without needing to look at the whole project
+    @Authors @Varrience
+    @About
+     - Dumps assets without needing to look at the whole project
 */
 var path = "https://studio.code.org/v3";
 var id = getURLPath()[2];
@@ -48,4 +47,9 @@ function getAnimation(id, saveAs) {
     var animation = loadImage(path + "/animations/" + id, function () {
         save(animation, saveAs || id);
     })
+}
+
+// Contributors
+function contributors() {
+    console.log("@Varrience");
 }
