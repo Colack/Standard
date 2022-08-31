@@ -1,6 +1,6 @@
 /*
   @Authors @Colack
-   - Last updated by @Colack    (8/17/22)
+   - Last updated by @Colack    (8/31/22)
   @About
    - Library for updating, receiving, and formating time values.
 */
@@ -25,4 +25,9 @@ function formatDate() {
   var month = months[d.getMonth()];
   var year = d.getFullYear();
   return day + " " + hr + ":" + min + ampm + " " + date + " " + month + " " + year;
+}
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
 }
