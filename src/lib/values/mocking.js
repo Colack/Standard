@@ -1,6 +1,6 @@
 /*
   @Authors @Colack
-   - Last updated by @Colack    (8/17/22)
+   - Last updated by @Colack    (8/31/22)
   @About
     - This libary is for testing different values and 'mocking' them.
 */
@@ -31,4 +31,9 @@ String.prototype.mock = function(message) {
 // Clear the expected values.
 String.prototype.clear = function() {
 	expections = [];
+}
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
 }
