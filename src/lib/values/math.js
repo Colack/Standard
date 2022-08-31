@@ -1,6 +1,6 @@
 /*
-    @Authors @Varrience, @Colack
-        - Last updated by @Colack    (8/17/2022)
+    @Authors @Varrience @Colack
+        - Last updated by @Colack    (8/31/2022)
         - Last updated by @Varrience (8/17/2022)
     @About
         - adds new features to Number & Math constructors
@@ -261,3 +261,8 @@ function absolute(number) {
   }
 }
 
+// Contributors
+function contributors() {
+    console.log("@Colack");
+    console.log("@Varrience");
+}
