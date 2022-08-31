@@ -145,3 +145,9 @@ function stop(index) {
     if (index === void 0) { index = watchers.length - 1; }
     clearInterval(watchers[index]);
 };
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
+    console.log("@Varrience");
+}
