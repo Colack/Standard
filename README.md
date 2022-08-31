@@ -12,17 +12,3 @@
 This is our [Standard](https://github.com/code-org-open-source/Standard) libary. It comes with all sorts of tools and applications for programming, and allows for easier use of the many different tools that [Code.org](https://code.org) provides.  
 
 Due to the way that [Code.org](https://code.org) handles libraries for Applab, this is not one big library, it is actually dozens, they are all catagorized under one big library for organization purposes.
-
-## Catagories
-There are many different libraries with many different purposes:
-
-- **console**   
-Libraries focused on working with the console.  
-- **values**  
-Libraries focused on tweaking, writing and reading different values inside of the application.   
-- **display**    
-Libraries focusing on displaying stuff on the screen.    
-- **utility**   
-Libraries focused on random useful features.   
-- **other**    
-Other Libraries for things like credits and such.
