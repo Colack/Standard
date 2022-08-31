@@ -74,3 +74,8 @@ String.prototype.padEnd = function (num, val) {
     }
     return (end);
 }
+
+// Contributors
+function contributors() {
+    console.log("@Varrience");
+}
