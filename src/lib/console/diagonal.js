@@ -26,3 +26,8 @@ function printSecondaryDiagonal(dia, n) {
     }
   }
 }
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
+}
