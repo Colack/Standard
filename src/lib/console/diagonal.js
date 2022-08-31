@@ -1,6 +1,6 @@
 /*
   @Authors @Colack
-    - Last updated by @Colack   (8/17/22)
+    - Last updated by @Colack   (8/31/22)
   @About
     - Prints Diagonals of Numbers
 */
