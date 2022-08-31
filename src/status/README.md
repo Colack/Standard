@@ -35,7 +35,3 @@ This script is running!
 
 Type Ctrl+C to exit
 ```
-
-## Credits
-index.js - @Colack @MonsterYT-DaGamer   
-status.bat - @Colack @MonsterYT-DaGamer
