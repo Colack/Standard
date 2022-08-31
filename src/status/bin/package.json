@@ -1,0 +1,15 @@
+{
+  "name": "cdo-discord-status",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node . o_GBsm67YxtyHC-tp5iBFtBnRtaUjrVRGbqrBVqSNoM js"
+  },
+  "author": "code-org-open-source",
+  "license": "MIT",
+  "dependencies": {
+    "discord-rich-presence": "^0.0.8",
+    "node-fetch": "^2.6.6"
+  }
+}
