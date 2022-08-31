@@ -1,5 +1,5 @@
 /*
-    @Author Varrience
+    @Author @Varrience
     @About
         - A(n) object that contains everything partaining to the benchmark
 */
@@ -87,4 +87,9 @@ var Timer = /** @class */ (function () {
 // creates the timer if you don't know how to create objects
 function createTimer(label) {
     return new Timer(label);
+}
+
+// Contributors
+function contributors() {
+    console.log("@Varrience");
 }
