@@ -1,6 +1,6 @@
 /*
     @Authors @Colack
-     - Last updated by @Colack   (8/17/22)
+     - Last updated by @Colack   (8/31/22)
     @About
      - A windows manager for Code.org
 */
@@ -62,4 +62,9 @@ function create(name, deleteable, moveable, text, x, y, width, height, backgroun
         }
     });
 
+}
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
 }
