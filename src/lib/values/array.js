@@ -1,7 +1,7 @@
 /*
  @Authors @Varrience @Colack
   - Last updated by @Varrience   (8/16/22)
-  - Last updated by @Colack      (8/17/22)
+  - Last updated by @Colack      (8/31/22)
  @About
   - Module for testing and looking at arrays.
 */
@@ -39,3 +39,9 @@ Object.defineProperty(Array.prototype, 'fill', {
         return (arr);
     }
 });
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
+    console.log("@Varrience");
+}
