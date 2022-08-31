@@ -1,6 +1,6 @@
 /*
-    @Authors @Colack, @Varrience
-     - Last updated by @Colack  (8/17/22)
+    @Authors @Colack @Varrience
+     - Last updated by @Colack  (8/31/22)
      - Last updated by @Varrience (8/30/22)
     @About
      - Library for messing around with values.
@@ -35,4 +35,10 @@ function delGlobal(name) {
     if(typeof name === 'string') {
         delete window[name];
     }
+}
+
+// Contributors
+function contributors() {
+    console.log("@Colack");
+    console.log("@Varrience");
 }
