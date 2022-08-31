@@ -2,3 +2,9 @@
 *.bgen @Colack
 *.btype @Colack
 *.blic @Colack
+*.json @Colack
+*.editorconfig @Colack
+*.get_maintainer.ignore @Colack
+*.gitattributes @Colack
+*.gitignore @Colack
+*.yml @Colack
