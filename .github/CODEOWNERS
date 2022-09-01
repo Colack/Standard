@@ -2,10 +2,11 @@
 *.bgen @Colack
 *.btype @Colack
 *.blic @Colack
-*.json @Colack
+*.json @Colack @MonsterYT-DaGamer
 *.editorconfig @Colack
 *.get_maintainer.ignore @Colack
 *.gitattributes @Colack
 *.gitignore @Colack
 *.yml @Colack
 *.bat @Colack @MonsterYT-DaGamer
+*.js @Colack @Varrience @MonsterYT-DaGamer
