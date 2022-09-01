@@ -32,7 +32,7 @@
 
         powershell write-host -fore red ---- Enter Code Typing ----
 
-        set /p type=.
+        set /p type=. 
 
         cls
 
@@ -40,10 +40,14 @@
 
         cls
 
+        powershell write-host -fore red "---- Are you working on Project? (y/n)"
+
+        set /p play=. 
+
         powershell write-host -fore green The Script is now running!
         powershell write-host -fore red You can stop it by typing Ctrl+C
 
-        node . %projectID% %type%
+        node . %projectID% %type% %play%
 
         cls
     EXIT /B 0
@@ -69,6 +73,12 @@
         echo This will appear as a little image in the corner of the status.
         powershell write-host -fore red "If you want block code like dance and play lab, just type the word 'block'."
         powershell write-host -fore green "If you want javascript code, which is game lab, just type the word 'js'."
+        timeout 3 > NUL
+        powershell write-host -fore red ---- Playing or Working ----
+        echo You will be prompted asking if you are playing or working on the current project.
+        echo "This will appear as a 'Are you working on project? (y/n)'"
+        echo "If you type 'y' it will make your status 'working on: '."
+        echo "If you type 'n' it will make your status 'playing: '."
         timeout 3 > NUL
         echo Press any key to Exit...
         timeout 9999 > NUL
