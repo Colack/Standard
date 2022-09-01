@@ -12,6 +12,7 @@ var credits = [
     'Thanks to:',
     '- Colack',
     '- Varrience',
+    '- MonsterYT',
     'Everyone at [WUT] World, and the GameLab forum.',
     'Thank you for using this library!'
 ];
