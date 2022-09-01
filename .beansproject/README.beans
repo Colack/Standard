@@ -2,7 +2,7 @@ Beans!
 header Standard
 wait 0.75
 print This is our standard library.
-print It comes with all sorts of tools for programming applications,
+print It comes with all sorts of tools and applications for programming,
 print and allows for easier use of the many tools that Code.org provides.
 wait 0.75
 print Due to the way that Code.org handles libraries for Applab, 
