@@ -1,11 +1,14 @@
                 This is a credits file for everyone who contributed to this 
-                project. Please enter your name (N), contribution (C),
-                description (D), and skills (T) in the list below. Thank you!
+                project. Please enter your name (N), and Github Link (G)
 
                                         Colack                             
                 ______________________________________________________________
 
 N: Colack
-C: Lead Developer
-D: Created the project and spearheaded the development of the project.
-T: Python, C, Java, JavaScript
+G: https://github.com/Colack
+
+N: Varrience
+G: https://github.com/Varrience
+
+N: MonsterYT-DaGamer
+G: https://github.com/MonsterYT-DaGamer
