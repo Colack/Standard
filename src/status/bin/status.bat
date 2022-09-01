@@ -1,5 +1,10 @@
 @ECHO OFF
 
+    : @Authors @Colack
+    :   - Last Updated by Colack    (9/1/22)
+    : @About
+    :   - Batch script to run the 'index.js' file.
+
     powershell write-host -fore White "CDO Status v1.1"
     powershell write-host -fore red Licensed under the MIT License
     powershell write-host -fore green CDO Open Source Team
