@@ -5,7 +5,7 @@
      - This file contains all credits from the './CREDITS' file. Thanks for all the help!
 */
 
-var waitTime = 50;
+var ver = "0.1";
 var credits = [
     'CDO Standard Library',
     'Author: Many People',
@@ -20,4 +20,8 @@ function credits() {
     for (var i = 0; i < credits.length; i++) {
         console.log(credits[i]);
     }
+}
+
+function version() {
+    console.log(ver);
 }
