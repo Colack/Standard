@@ -30,6 +30,13 @@ function gypGlobal(name, varriable) {
     }
 }
 
+// Localises any Library imported within your project
+function localLib(lib) {
+  for (var l in lib) {
+    window[l] = lib[l];
+  }
+}
+
 // Deletes a Global entry permanently from the window
 function delGlobal(name) {
     if(typeof name === 'string') {
