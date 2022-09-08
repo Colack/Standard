@@ -43,9 +43,16 @@ function getSource(saveAs) {
 
 // dump an animation
 function getAnimation(id, saveAs) {
-    console.log("Path: " + path + "/animations/" + id);
+    //console.log("Path: " + path + "/animations/" + id);
     var animation = loadImage(path + "/animations/" + id, function () {
         save(animation, saveAs || id);
+    })
+}
+
+// get a thumbnail of your project as a downloadable or for whatever other reason
+function getThumbnail(id, saveAs) {
+    var thumbnail = loadImage(path + "/files/" + id + "/.metadata/thumbnail.png", function() {
+        save(thumbnail, saveAs || "thumbnail_"+id+".png")
     })
 }
 
