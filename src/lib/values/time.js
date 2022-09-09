@@ -1,6 +1,7 @@
 /*
   @Authors @Colack @Varrience
    - Last updated by @Colack    (8/31/22)
+   - Last updated by @Varrience (9/9/22)
   @About
    - Library for updating, receiving, and formating time values.
 */
@@ -53,4 +54,5 @@ function formatDate(millitary) {
 // Contributors
 function contributors() {
     console.log("@Colack");
+    console.log("@Varrience");
 }
