@@ -2,4 +2,8 @@ node_modules
 node_modules/*
 .github
 .github/*
-.src/tests/*
+.beansproject/*
+.beansproject
+.gitignore
+.gitattributes
+.get_maintainer.ignore
