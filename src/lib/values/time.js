@@ -29,25 +29,26 @@ function formatDate() {
 }
 */
 // not sure if mine is faster but some of the other stuff can be taken out if your not interested
-function formatDate(millitary?: boolean) {
-    let d = Date();
-    let hour = Number(d.substring(16, 18));
-    let ampm = "";
+function formatDate(millitary) {
+    var d = Date();
+    var hour = Number(d.substring(16, 18));
+    var ampm = "";
     if (millitary && this.hour > 12) {
         hour -= 12;
         ampm = "PM";
-    } else {
+    }
+    else {
         hour += 12;
         ampm = "AM";
     }
-    let minute = d.substring(19, 21)
-    let second = d.substring(22, 24);
-    let day = d.substring(0, 3);
-    let date = d.substring(8, 10);
-    let month = d.substring(4, 7);
-    let year = d.substring(11, 15);
-    let zone = d.substring(28,33)
-    return (`${day} ${hour}:${minute} ${ampm} ${date} ${month} ${year}`)
+    var minute = d.substring(19, 21);
+    var second = d.substring(22, 24);
+    var day = d.substring(0, 3);
+    var date = d.substring(8, 10);
+    var month = d.substring(4, 7);
+    var year = d.substring(11, 15);
+    var zone = d.substring(28, 33);
+    return ("".concat(day, " ").concat(hour, ":").concat(minute, " ").concat(ampm, " ").concat(date, " ").concat(month, " ").concat(year));
 }
 // Contributors
 function contributors() {
