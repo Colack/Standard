@@ -1,6 +1,6 @@
 /*
   @Authors @Varrience
-   - Last updated by @Varrience     (8/5/22)
+   - Last updated by @Varrience     (9/10/22)
   @About
        - Provides some polyfills and new functionality to basic strings left out by CDO
 */
@@ -74,6 +74,64 @@ String.prototype.padEnd = function (num, val) {
     }
     return (end);
 }
+
+// restores charCodeAt
+String.prototype.codePointAt = function (position) {
+    position <<= 0;
+    var length = this.length;
+    if (position < 0 || position >= length) {
+        return undefined;
+    }
+    var lead = this.charCodeAt(position);
+    if (lead < 55296 || lead > 56319 || position + 1 === length) {
+        return lead;
+    }
+    var tail = this.charCodeAt(position + 1);
+    if (tail < 56320 || tail > 57343) {
+        return lead;
+    }
+    return ((lead - 55296) * 1024) + (tail - 56320) + 65536;
+};
+
+// converts all incompadible UTF-8 text to ASCII
+String.prototype.toAnsi = function () {
+    var text = this;
+    var codes = "";
+    for (var i = 0; i < text.length; i++) {
+        var parsed = text.charCodeAt(i);
+        if (parsed >= 255) {
+            text = text.substring(0, i) + "\\u" + parsed.toString(16) + text.substring(i + 1, text.length);
+        }
+        codes += text[i];
+    }
+    return (codes);
+};
+
+// decodes any ASCIIFIED string to UTF-8
+String.prototype.toUni = function () {
+    return decodeURIComponent(JSON.parse('"' + this.replace('"', '\\"') + '"'));
+};
+
+// restores fromCodePoint polyfill
+String.fromCodePoint = function () {
+    var chars = [];
+    for (var i = 0; i < arguments.length; i++) {
+        var c = Number(arguments[i]);
+        if (!isFinite(c) || c < 0 || c > 1114111 || Math.floor(c) !== c) {
+            throw new RangeError("Invalid code point " + c);
+        }
+        if (c < 65536) {
+            chars.push(c);
+        }
+        else {
+            c -= 65536;
+            chars.push((c >> 10) + 55296);
+            chars.push((c % 1024) + 56320);
+        }
+    }
+    return String.fromCharCode.apply(undefined, chars);
+};
+
 
 // Contributors
 function contributors() {
