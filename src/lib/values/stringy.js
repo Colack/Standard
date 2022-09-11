@@ -15,7 +15,7 @@ String.prototype.repeat = function (num) {
 }
 
 // Inserts a string within a string at a given position
-String.prototype.insert = function (str, pos?) {
+String.prototype.insert = function (str, pos) {
     return (this.substring(0, pos) + str + this.substring(pos, this.length));
 }
 
