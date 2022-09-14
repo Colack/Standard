@@ -1,13 +1,12 @@
 /*
   @Authors @Colack @Varrience
-   - Last updated by @Colack    (8/31/22)
+   - Last updated by @Colack    (9/14/22)
    - Last updated by @Varrience (9/9/22)
   @About
    - Library for updating, receiving, and formating time values.
 */
 
-// Format and Return a new date
-/* Date does this already
+// Format a new data
 function formatDate() {
   var d = new Date();
   var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -28,7 +27,7 @@ function formatDate() {
   var year = d.getFullYear();
   return day + " " + hr + ":" + min + ampm + " " + date + " " + month + " " + year;
 }
-*/
+
 // not sure if mine is faster but some of the other stuff can be taken out if your not interested
 function formatDate(millitary) {
     var d = Date();
