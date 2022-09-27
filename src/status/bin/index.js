@@ -54,7 +54,7 @@ const start = async function() {
     const response = await fetch(url);
     const data = await response.json();
 
-    const ver = await fetch('https://colack.github.io/verified.json');
+    const ver = await fetch('https://colack.github.io/site/verified.json');
     const verdata = await ver.json();
     if (data) {
         projectName = data.name;
