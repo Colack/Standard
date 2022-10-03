@@ -113,8 +113,8 @@ String.prototype.toUni = function () {
 };
 
 // cencors a given input based on regex
-String.prototype.censor(placeholder){
-    return (this.replace(str.replace(/[\S]*(piss|vagina|puss|tit|cock|mother+|f(u|r)[\S][ck]+|shit|bitch|cunt|di[ck]+|nigg[aer]+|\bkkk\b|penis|hitler|ass|\bs?cum\b|slut|\b(wt|a|t)f\b|hor?e|ho?r?n?y|dookie|balls|deept|h(ump|ate)|fag|retard|douche)[\S]*/gi, placeholder || "❌")));
+String.prototype.censor = function(placeholder){
+    return (this.replace(/[\S]*(piss|vagina|puss|tit|cock|mother+|f(u|r)[\S][ck]+|shit|bitch|cunt|di[ck]+|nigg[aer]+|\bkkk\b|penis|hitler|ass|\bs?cum\b|slut|\b(wt|a|t)f\b|hor?e|ho?r?n?y|dookie|balls|deept|h(ump|ate)|fag|retard|douche)[\S]*/gi, placeholder || "❌"));
 }
 
 // restores fromCodePoint polyfill
