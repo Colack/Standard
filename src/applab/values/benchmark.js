@@ -77,9 +77,8 @@ var Timer = /** @class */ (function () {
         var timers = this.time.length || 1;
         console.log("".concat(this.label, "Execution #").concat(timers, "\n    Current Time: ").concat(this.time[timers - 1], " ms\n    Average Time: ").concat(this.average, " ms | Median: ").concat(this.median, " | Range: ").concat(this.range, " ms\n    Full Time: ").concat(this.total, " ms"));
     };
-    Timer.prototype.purge = function () {
-        new Timer(this.label);
-        return ("Time Log Purged");
+    Timer.prototype.purge = function (label) {
+        return (new Timer(label || this.label));
     };
     return Timer;
 }());
