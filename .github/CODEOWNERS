@@ -1,7 +1,3 @@
-*.beans @Colack
-*.bgen @Colack
-*.btype @Colack
-*.blic @Colack
 *.json @Colack @MonsterYT-DaGamer
 *.editorconfig @Colack
 *.get_maintainer.ignore @Colack
