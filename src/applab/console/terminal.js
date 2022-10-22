@@ -26,7 +26,7 @@ function newLine() {
 }
 
 // Logs an error to the console.
-console.error(input) {
+console.error = function(input) {
     console.log("> Error: " + input);
 }
 
