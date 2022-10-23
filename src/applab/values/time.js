@@ -48,7 +48,7 @@ function quickDate(millitary) {
     var month = d.substring(4, 7);
     var year = d.substring(11, 15);
     var zone = d.substring(28, 33);
-    return ("".concat(day, " ").concat(hour, ":").concat(minute, " ").concat(ampm, " ").concat(date, " ").concat(month, " ").concat(year));
+    return ("".concat(day, " ").concat(hour, ":").concat(minute, " ").concat(ampm, " ").concat(month, " ").concat(date, " ").concat(year));
 }
 // Contributors
 function contributors() {
