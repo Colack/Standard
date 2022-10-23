@@ -37,8 +37,8 @@ function quickDate(millitary) {
         hour -= 12;
         ampm = "PM";
     }
-    else if (!millitary && hour === 0){
-        hour += 12;
+    else if (!millitary && hour < 12){
+        hour = hour === 0 ? 12: hour;
         ampm = "AM";
     }
     var minute = d.substring(19, 21);
