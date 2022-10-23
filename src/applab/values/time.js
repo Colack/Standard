@@ -29,11 +29,11 @@ function formatDate() {
 }
 
 // not sure if mine is faster but some of the other stuff can be taken out if your not interested
-function formatDate(millitary) {
+function quickDate(millitary) {
     var d = Date();
     var hour = Number(d.substring(16, 18));
     var ampm = "";
-    if (millitary && this.hour > 12) {
+    if (!millitary && hour > 12) {
         hour -= 12;
         ampm = "PM";
     }
