@@ -36,7 +36,7 @@ function require(path, callback) {
         //msg = msg.replace(/(?<=var.*)(?<![\[\(:].*),\s*((?=.*;)|(?!.*[\)\]]))/g, ';window.');
         //msg = msg.replace(/(?<!\(\s*)var\s+/g, 'window.');
         //msg = msg.replace(/(?<=window\.[\w\d_-]+);/g, '=undefined;');
-        msg = msg.replace(/(^function\s*)([\w\d_-]+)(?=\()/g, "window[\"" + lib + "\"].$2 = function")
+        msg = msg.replace(/(^function\s*)([\w\d_-]+)(?=\()/gm, "window[\"" + lib + "\"].$2 = function")
         window[lib].js = function () { return msg };
         eval(msg);
         if (typeof callback == 'function') {
