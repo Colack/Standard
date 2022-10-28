@@ -35,11 +35,11 @@ function quickDate(millitary) {
     var ampm = "";
     if (!millitary && hour > 12) {
         hour -= 12;
-        ampm = "PM";
+        ampm = " PM ";
     }
     else if (!millitary && hour < 12){
         hour = hour === 0 ? 12: hour;
-        ampm = "AM";
+        ampm = " AM ";
     }
     var minute = d.substring(19, 21);
     var second = d.substring(22, 24);
@@ -48,7 +48,8 @@ function quickDate(millitary) {
     var month = d.substring(4, 7);
     var year = d.substring(11, 15);
     var zone = d.substring(28, 33);
-    return ("".concat(day, " ").concat(hour, ":").concat(minute, " ").concat(ampm, " ").concat(month, " ").concat(date, " ").concat(year));
+    return ("".concat(day, " ").concat(hour, " ").concat(minute).concat(ampm).concat(month, " ").concat(date, " ").concat(year));
+    //return ("".concat(day, " ").concat(hour, ":").concat(minute, " ").concat(ampm, " ").concat(month, " ").concat(date, " ").concat(year));
 }
 // Contributors
 function contributors() {
