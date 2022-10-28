@@ -31,12 +31,12 @@ console.error = function(input) {
 }
 
 // Clears the entire console.
-function clear() {
+console.clear = function() {
     for (var i = 0; i < 100; i++) {
         console.log("");
     }
 }
-console.clear = clear;
+window.clear = console.clear;
 // Prompts the user.  ...is this necessary? also this will force a callback error I'll just disable it for now
 // function prompt(input) {
 //     prompt(input);
