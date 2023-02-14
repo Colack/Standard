@@ -27,7 +27,7 @@ function newLine() {
 
 // Logs an error to the console.
 console.error = function(input) {
-    console.log("> Error: " + input);
+    console.log("Error: " + input);
 }
 
 // Clears the entire console.
@@ -76,7 +76,7 @@ function countResetAll() {
 
 // Returns a debug messages.
 function debug(input) {
-    console.log("> Debug: " + input);
+    console.log("Debug: " + input);
 }
 
 // Returns a input.
@@ -108,7 +108,7 @@ function info(input) {
 // Waits a specified amount of time, then logs a specified value.
 console.alarm = function(input, message) {
     setTimeout(function() {
-        console.log("> Alarm: " + message);
+        console.log("Alarm: " + message);
     }, input);
 }
 
@@ -119,7 +119,7 @@ function alarmReset(input) {
 
 // Sends a warning to the console.
 console.warn = function(input) {
-    console.log("> Warning: " + input);
+    console.log("Warning: " + input);
 }
 
 // Creates a table from an input and logs it.
